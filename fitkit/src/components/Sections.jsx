@@ -2,30 +2,6 @@ import { useState } from 'react'
 import Reveal from './Reveal'
 import Counter from './Counter'
 
-/* ---------------- PILLARS ---------------- */
-export function Pillars() {
-  const items = [
-    ['♥', 'Health', 'Build lasting habits with coaching that puts your long-term wellbeing first.'],
-    ['⚡', 'Fitness', 'Personalised plans that push your limits and track every ounce of progress.'],
-    ['🏋', 'Workout', 'Modern equipment and high-energy sessions designed to get real results fast.'],
-  ]
-  return (
-    <section className="pillars">
-      <div className="pillars-grid">
-        {items.map(([ic, h, p], i) => (
-          <Reveal key={h} delay={i * 0.12} className="pillar">
-            <span className="pillar-icon">{ic}</span>
-            <div>
-              <h3>{h}</h3>
-              <p>{p}</p>
-            </div>
-          </Reveal>
-        ))}
-      </div>
-    </section>
-  )
-}
-
 /* ---------------- ABOUT ---------------- */
 export function About() {
   const feats = [
